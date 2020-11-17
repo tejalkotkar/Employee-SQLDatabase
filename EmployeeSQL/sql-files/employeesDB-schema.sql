@@ -1,3 +1,12 @@
+/* Order of table creation:
+departments
+titles
+employees
+dept_emp
+dept_manager
+salaries
+*/
+
 -- Employee DB Schema
 DROP TABLE IF EXISTS salaries;
 DROP TABLE IF EXISTS dept_manager;
@@ -5,6 +14,7 @@ DROP TABLE IF EXISTS dept_emp;
 DROP TABLE IF EXISTS employees CASCADE;
 DROP TABLE IF EXISTS titles CASCADE;
 DROP TABLE IF EXISTS departments CASCADE;
+
 
 CREATE TABLE departments(
 	dept_no VARCHAR Primary Key NOT NULL,
